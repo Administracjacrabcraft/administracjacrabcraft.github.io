@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrabCraft - Administracja</title>
     <style>
-        /* Globalne style */
         body {
             font-family: 'Segoe UI', sans-serif;
             background-color: #111;
@@ -15,25 +14,21 @@
             overflow-x: hidden;
             box-sizing: border-box;
         }
-
         h2, h3 {
             font-size: 2rem;
             color: #00ffcc;
             text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
             margin-bottom: 15px;
         }
-
         ul {
             font-size: 1.2rem;
             margin-left: 20px;
             list-style: none;
             padding: 0;
         }
-
         li {
             margin: 10px 0;
         }
-
         .section {
             padding: 50px;
             margin: 20px 0;
@@ -42,12 +37,10 @@
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
             transition: all 0.3s ease;
         }
-
         .section:hover {
             box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
             background-color: #333;
         }
-
         .neon-title {
             font-size: 3.5rem;
             text-align: center;
@@ -55,8 +48,6 @@
             text-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
             margin-bottom: 40px;
         }
-
-        /* Animacja logo */
         .logo {
             text-align: center;
             font-size: 4rem;
@@ -64,31 +55,17 @@
             text-shadow: 0 0 30px #00ffcc, 0 0 50px #00ffcc;
             animation: glow 1.5s infinite alternate;
         }
-
         @keyframes glow {
-            0% {
-                text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
-            }
-            100% {
-                text-shadow: 0 0 25px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
-            }
+            0% { text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
+            100% { text-shadow: 0 0 25px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc; }
         }
-
-        /* Animacje wejścia */
         .fadeIn {
             animation: fadeIn 1s ease-out;
         }
-
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-
-        /* Karty administracji */
         .admin-card {
             display: inline-block;
             width: 250px;
@@ -100,13 +77,10 @@
             box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .admin-card:hover {
             transform: scale(1.05);
             box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
         }
-
-        /* Button i input */
         button, input[type="password"] {
             font-size: 1.2rem;
             padding: 15px;
@@ -117,7 +91,6 @@
             width: 100%;
             margin: 20px 0;
         }
-
         .ip-box {
             background-color: #00ffc30d;
             padding: 20px;
@@ -126,14 +99,12 @@
             border-radius: 10px;
             margin-top: 30px;
         }
-
         .footer {
             text-align: center;
             margin-top: 50px;
             font-size: 1rem;
             color: #aaa;
         }
-
         .error {
             color: red;
             text-align: center;
@@ -142,8 +113,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Hasło dostępu -->
     <div class="section" id="loginBox">
         <div class="neon-title fadeIn">CrabCraft - Panel Administracji</div>
         <input type="password" id="password" placeholder="Wpisz hasło">
@@ -151,57 +120,55 @@
         <div class="error" id="errorText">Nieprawidłowe hasło!</div>
     </div>
 
-    <!-- Główna zawartość -->
     <div class="section" id="content" style="display: none;">
         <div class="logo">CrabCraft</div>
 
         <div class="fadeIn">
             <h2>Co-Ownerzy</h2>
-            <div class="admin-card">
-                <h3>Filippo15044</h3>
-            </div>
-            <div class="admin-card">
-                <h3>trawka3</h3>
-            </div>
+            <div class="admin-card"><h3>Filippo15044</h3></div>
+            <div class="admin-card"><h3>trawka3</h3></div>
         </div>
 
         <div class="fadeIn">
             <h2>Senior Admini</h2>
-            <div class="admin-card">
-                <h3>xPittereQQ</h3>
-            </div>
-            <div class="admin-card">
-                <h3>IGIiNIKI</h3>
-            </div>
+            <div class="admin-card"><h3>xPittereQQ</h3></div>
+            <div class="admin-card"><h3>IGIiNIKI</h3></div>
         </div>
 
         <div class="fadeIn">
             <h2>Support</h2>
-            <div class="admin-card">
-                <h3>Svagger</h3>
-            </div>
+            <div class="admin-card"><h3>Svagger</h3></div>
         </div>
 
         <div class="fadeIn">
             <h2>Junior Moderatorzy</h2>
-            <div class="admin-card">
-                <h3>_0lczku_</h3>
-            </div>
-            <div class="admin-card">
-                <h3>Koloolexd2</h3>
-            </div>
+            <div class="admin-card"><h3>_0lczku_</h3></div>
+            <div class="admin-card"><h3>Koloolexd2</h3></div>
         </div>
 
         <div class="fadeIn">
-            <h2>Regulamin Administracji</h2>
+            <h2>📜 Regulamin Administracji</h2>
             <ul>
-                <li><strong>1. Etyka i odpowiedzialność:</strong> Administracja ma obowiązek zachowania profesjonalizmu oraz uprzednio ustalonego standardu zachowań. Musi traktować wszystkich graczy z szacunkiem i równym podejściem.</li>
-                <li><strong>2. Uprawnienia administratorów:</strong> Administratorzy mają prawo do moderowania gry, banowania graczy za łamanie regulaminu, oraz usuwania lub edytowania treści szkodliwych dla serwera. Zabronione jest wykorzystywanie uprawnień do własnych korzyści.</li>
-                <li><strong>3. Zakaz oszustw:</strong> Żadne formy oszustw (cheaty, modyfikacje itp.) są zabronione. Administratorzy nie mają prawa do używania nielegalnych modów w grze. Złamanie tej zasady prowadzi do natychmiastowego usunięcia z administracji.</li>
-                <li><strong>4. Współpraca z graczami:</strong> Administratorzy mają obowiązek pomoc w rozwiązywaniu problemów graczy, odpowiadać na zgłoszenia, a także współpracować z innymi członkami administracji.</li>
-                <li><strong>5. Sankcje:</strong> Administratorzy, którzy złamią regulamin, będą ukarani w zależności od wagi przewinienia. Może to być upomnienie, degradacja lub całkowite usunięcie z administracji.</li>
-                <li><strong>6. Komunikacja:</strong> Administratorzy powinni komunikować się w sposób jasny, zrozumiały, a także unikać obraźliwych słów, szczególnie w publicznych kanałach.</li>
-                <li><strong>7. Działania na korzyść serwera:</strong> Administratorzy są zobowiązani do wspierania rozwoju serwera, dbania o porządek i przyjemną atmosferę dla graczy.</li>
+                <li>Administrator ma prawo do sprawdzania graczy tylko za pomocą Process Hacker oraz LastActivityView.</li>
+                <li>Administracja, która naruszy regulamin administracji, zostaje natychmiast wyrzeczona ze swoich uprawnień.</li>
+                <li>Jeśli gracz nadmiernie cheatuje lub rażąco łamie regulamin, administrator ma obowiązek nadać bana permanentnego.</li>
+                <li>Zabrania się żebrania o rangi – typu: „Mogę rangę? Np. Admin?”</li>
+            </ul>
+            <h3>❓Dodatkowe pytania i zasady (FAQ / rozszerzony regulamin):</h3>
+            <ul>
+                <li><strong>Czy mogę mieć więcej niż jedno konto?</strong> – Nie. Multikonta są zakazane.</li>
+                <li><strong>Czy mogę reklamować swój serwer?</strong> – Nie. Reklamowanie jest zabronione.</li>
+                <li><strong>Czy mogę używać modów?</strong> – Tylko jeśli nie dają przewagi.</li>
+                <li><strong>Czy przeklinanie jest dozwolone?</strong> –  Nie można.</li>
+                <li><strong>Czy mogę obrażać administrację?</strong> – Nie. Grozi banem.</li>
+                <li><strong>Czy trolling jest dozwolony?</strong> – Nie. Utrudnianie innym gry = kara.</li>
+                <li><strong>Czy mogę wysyłać NSFW?</strong> – Absolutnie nie.</li>
+                <li><strong>Czy mogę podawać fejkowe raporty?</strong> – Nie. To nadużycie systemu.</li>
+                <li><strong>Czy administrator może mnie zbanować bez dowodów?</strong> – Nie. Dowody są obowiązkowe.</li>
+                <li><strong>Czy mogę sprzedawać rangi/konta?</strong> – Nie.</li>
+                <li><strong>Czy mogę rozmawiać po angielsku?</strong> – Tak, ale głównie preferujemy język polski.</li>
+                <li><strong>Czy mogę budować wszędzie?</strong> – Tylko w wyznaczonych miejscach.</li>
+                <li><strong>Czy mogę griefować?</strong> – Griefing jest zakazany.</li>
             </ul>
         </div>
 
@@ -218,7 +185,6 @@
         function checkPassword() {
             const input = document.getElementById("password").value;
             const correctPassword = "Adminitracjacrabcraft@[][][]";
-
             if (input === correctPassword) {
                 document.getElementById("loginBox").style.display = "none";
                 document.getElementById("content").style.display = "block";
